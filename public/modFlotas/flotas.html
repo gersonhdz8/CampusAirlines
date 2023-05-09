@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="/public/home.css"> 
+    <script defer src="/public/modFlotas/flotas.js"></script>
+
+    <title>Flotas</title>
+</head>
+<body class="bg-gray-100">
+    <div class="w-max p-8 mx-auto my-10 bg-white shadow rounded-xl shadow-slate-300">
+        <h1 class="text-4xl text-center font-medium">Registro de Aeronaves</h1>
+        <p class="text-slate-500 text-center">CampusAirlines 👋</p>
+
+        <form id="form" class="my-10 grid grid-cols-2 gap-5 ">
+            <div class="align-middle items-center justify-center place-content-center">
+                <label for="numNave">
+                    <p class="pb-2 font-medium text-slate-700">Número de nave</p>
+                    <input id="numNave" name="numNave"  type="text" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ingrese Número de la nave">
+                </label>
+            </div>    
+            <div>
+                <label for="maxPasajeros">
+                    <p class="pb-2 font-medium text-slate-700">Cantidad Pasajeros</p>
+                    <input id="maxPasajeros" name="maxPasajeros" type="number" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ingrese Cantidad de Pasajeros">
+                </label>
+            </div> 
+            <div>
+                <label for="fechaCompra">
+                    <p class="pb-2 font-medium text-slate-700">Fecha Compra</p>
+                    <input id="fechaCompra" name="fechaCompra"  type="date" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Fecha de Compra">
+                </label>
+            </div> 
+            <div>
+                <label for="valorCompra">
+                    <p class="pb-2 font-medium text-slate-700">Valor Compra</p>
+                    <input id="valorCompra" name="valorCompra" type="number" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Valor de compra">
+                </label>
+            </div> 
+            <div>
+                <label for="matriculaNave">
+                    <p class="pb-2 font-medium text-slate-700">Número de matricula</p>
+                    <input id="matriculaNave" name="matriculaNave" type="text"  class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Matricula de la nave">
+                </label>
+            </div>
+            
+            <button class="grid  col-span-2 items-center justify-center w-auto p-3 my-2 mx-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" id="btnIngresar" type="submit" data-accion="POST">
+                <span>Registrar Aeronave</span>
+            </button>
+        </form>
+    </div>
+</body>
+</html>

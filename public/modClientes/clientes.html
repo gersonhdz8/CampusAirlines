@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="/public/home.css">
+    <script defer src="/public/modClientes/clientes.js"></script> 
+
+    <title>Clientes</title>
+</head>
+<body class="bg-gray-100 flex flex-row">
+    <div class="w-max p-8 ml-10 my-10 bg-white shadow rounded-xl shadow-slate-300">
+        <h1 class="text-4xl text-center font-medium">Clientes</h1>
+        <p class="text-slate-500 text-center">CampusAirlines👋</p>
+
+        <form id="form"class="my-10 grid grid-cols-3 gap-5 ">
+            <div class="align-middle items-center justify-center place-content-center">
+                <label for="nombre">
+                    <p class="pb-2 font-medium text-slate-700">Nombre</p>
+                    <input id="nombre" name="nombre"  type="text" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ingrese nombre completo">
+                </label>
+            </div>    
+            <div>
+                <label for="apellido">
+                    <p class="pb-2 font-medium text-slate-700">Apellido</p>
+                    <input id="apellido" name="apellido" type="text" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ingrese apellido">
+                </label>
+            </div> 
+            <div>
+                <label for="documento">
+                    <p class="pb-2 font-medium text-slate-700">Documento</p>
+                    <input id="documento" name="documento"  type="number" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Número de documento">
+                </label>
+            </div> 
+            <div>
+                <label for="telefono">
+                    <p class="pb-2 font-medium text-slate-700">Telefono</p>
+                    <input id="telefono" name="telefono" type="tel"  class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Número de contacto">
+                </label>
+            </div> 
+            <div>
+                <label for="fechaNacimiento">
+                    <p class="pb-2 font-medium text-slate-700">Fecha de nacimiento</p>
+                    <input id="fechaNacimiento" name="fechaNacimiento" type="date" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Fecha de nacimiento">
+                </label>
+            </div>
+            <div>
+                <label for="ciudad">
+                    <p class="pb-2 font-medium text-slate-700">Ciudad</p>
+                    <input id="ciudad" name="ciudad" type="text" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ciudad de origen">
+                </label>
+            </div>
+            <div>
+                <label for="pais">
+                    <p class="pb-2 font-medium text-slate-700">Pais</p>
+                    <input id="pais" name="pais" type="text"  class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Pais de origen">
+                </label>
+            </div>
+            <div>
+                <label for="email">
+                    <p class="pb-2 font-medium text-slate-700">Email</p>
+                    <input id="email" name="email" type="email" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Correo Electrónico">
+                </label>
+            </div> 
+            <div></div>
+            <div></div>
+            <div class="grid grid-cols-3 my-5">
+                <button class="inline-flex items-center justify-center w-auto p-3 my-2 mx-2  font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" id="register" type="submit" data-accion="POST">
+                    <span>Register</span>
+                </button>
+                <button class="inline-flex items-center justify-center w-auto p-3 my-2 mx-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow"  type="submit" data-accion="PUT">
+                    <span>Actualizar</span>
+                </button> 
+                <button class="inline-flex items-center justify-center w-auto p-3 my-2 mx-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" type="submit" data-accion="GET">
+                    <span>Listar</span>
+                </button> 
+                <button class="inline-flex items-center justify-center w-auto p-3 my-2 mx-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" type="submit" data-accion="DELETE">
+                    <span>Eliminar</span>
+                </button> 
+                <button class="inline-flex items-center justify-center w-auto p-3 my-2 mx-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" type="submit" data-accion="SEARCH">
+                    <span>Buscar</span>
+                </button> 
+            </div>         
+        </form>
+    </div>
+    <div id="listado" class="w-3/6 p-8 mr-10 mx-2 my-10 bg-white shadow rounded-xl shadow-slate-300">
+        LISTADO
+    </div>
+</body>
+</html>

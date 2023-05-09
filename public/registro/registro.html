@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="/public/home.css"> 
+    <script defer src="/public/registro/registro.js"></script>
+
+    <title>Register</title>
+</head>
+<body class="bg-gray-100">
+    <div class="w-max p-8 mx-auto my-10 bg-white shadow rounded-xl shadow-slate-300">
+        <h1 class="text-4xl text-center font-medium">Register</h1>
+        <p class="text-slate-500 text-center">Hi, Welcome 👋</p>
+
+        <form id="form" class="my-10 grid grid-cols-2 gap-5 ">
+            <div class="align-middle items-center justify-center place-content-center">
+                <label for="nombre">
+                    <p class="pb-2 font-medium text-slate-700">Nombre</p>
+                    <input id="nombre" name="nombre"  type="text" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ingrese nombre completo">
+                </label>
+            </div>    
+            <div>
+                <label for="apellido">
+                    <p class="pb-2 font-medium text-slate-700">Apellido</p>
+                    <input id="apellido" name="apellido" type="text" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ingrese apellido">
+                </label>
+            </div> 
+            <div>
+                <label for="documento">
+                    <p class="pb-2 font-medium text-slate-700">Documento</p>
+                    <input id="documento" name="documento"  type="number" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Número de documento">
+                </label>
+            </div> 
+            <div>
+                <label for="telefono">
+                    <p class="pb-2 font-medium text-slate-700">Telefono</p>
+                    <input id="telefono" name="telefono" type="tel" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Número de contacto">
+                </label>
+            </div> 
+            <div>
+                <label for="fechaNacimiento">
+                    <p class="pb-2 font-medium text-slate-700">Fecha de nacimiento</p>
+                    <input id="fechaNacimiento" name="fechaNacimiento" type="date"  class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Fecha de nacimiento">
+                </label>
+            </div>
+            <div>
+                <label for="ciudad">
+                    <p class="pb-2 font-medium text-slate-700">Ciudad</p>
+                    <input id="ciudad" name="ciudad" type="text" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ciudad de origen">
+                </label>
+            </div>
+            <div>
+                <label for="pais">
+                    <p class="pb-2 font-medium text-slate-700">Pais</p>
+                    <input id="pais" name="pais" type="text"  class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Pais de origen">
+                </label>
+            </div>
+            <div>
+                <label for="email">
+                    <p class="pb-2 font-medium text-slate-700">Email</p>
+                    <input id="email" name="email" type="email" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Correo Electrónico">
+                </label>
+            </div>                        
+            <button class="grid  col-span-2 items-center justify-center w-auto p-3 my-2 mx-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" id="btnIngresar" type="submit" data-accion="POST">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                </svg>
+                <span>Register</span>
+            </button>
+        </form>
+    </div>
+</body>
+</html>

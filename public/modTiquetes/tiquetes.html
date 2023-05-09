@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="/public/home.css"> 
+    <script defer src="/public/modTiquetes/tiquetes.js"></script>
+
+    <title>Tiquetes</title>
+</head>
+<body class="bg-gray-100">
+    <div class="w-max p-8 mx-auto my-10 bg-white shadow rounded-xl shadow-slate-300">
+        <h1 class="text-4xl text-center font-medium">Compra tiquetes</h1>
+        <p class="text-slate-500 text-center">CampusAirlines 👋</p>
+
+        <form id="form" class="my-10 grid grid-cols-2 gap-5 ">
+            <div>
+                <label for="ciudadOrigen">
+                    <p class="pb-2 font-medium text-slate-700">Ciudad Origen</p>
+                    <input id="ciudadOrigen" name="ciudadOrigen" type="tel"  class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ingrese ciudad de ORIGEN">
+                </label>
+            </div>
+            <div>
+                <label for="ciudadDestino">
+                    <p class="pb-2 font-medium text-slate-700">Ciudad Destino</p>
+                    <input id="ciudadDestino" name="ciudadDestino" type="tel"  class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ingrese ciudad de Destino">
+                </label>
+            </div>
+            
+            <button class="grid  col-span-2 items-center justify-center w-auto p-3 my-2 mx-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" id="btnIngresar" type="submit" data-accion="POST">
+                <span>Comprar tiquete</span>
+            </button>
+        </form>
+    </div>
+</body>
+</html>
