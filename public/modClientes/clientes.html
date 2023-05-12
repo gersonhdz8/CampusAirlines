@@ -9,83 +9,119 @@
 
     <title>Clientes</title>
 </head>
-<body class="bg-gray-100 flex flex-row">
-    <div class="w-max p-8 ml-10 my-10 bg-white shadow rounded-xl shadow-slate-300">
-        <h1 class="text-4xl text-center font-medium">Clientes</h1>
-        <p class="text-slate-500 text-center">CampusAirlines👋</p>
-
-        <form id="form"class="my-10 grid grid-cols-3 gap-5 ">
-            <div class="align-middle items-center justify-center place-content-center">
-                <label for="nombre">
-                    <p class="pb-2 font-medium text-slate-700">Nombre</p>
-                    <input id="nombre" name="nombre"  type="text" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ingrese nombre completo">
-                </label>
-            </div>    
-            <div>
-                <label for="apellido">
-                    <p class="pb-2 font-medium text-slate-700">Apellido</p>
-                    <input id="apellido" name="apellido" type="text" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ingrese apellido">
-                </label>
-            </div> 
-            <div>
-                <label for="documento">
-                    <p class="pb-2 font-medium text-slate-700">Documento</p>
-                    <input id="documento" name="documento"  type="number" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Número de documento">
-                </label>
-            </div> 
-            <div>
-                <label for="telefono">
-                    <p class="pb-2 font-medium text-slate-700">Telefono</p>
-                    <input id="telefono" name="telefono" type="tel"  class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Número de contacto">
-                </label>
-            </div> 
-            <div>
-                <label for="fechaNacimiento">
-                    <p class="pb-2 font-medium text-slate-700">Fecha de nacimiento</p>
-                    <input id="fechaNacimiento" name="fechaNacimiento" type="date" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Fecha de nacimiento">
-                </label>
+<body class="container mx-auto bg-gray-100">
+    <div class="grid justify-items-center">
+        <div class="grid items-center justify-center p-8 my-10 bg-white shadow w-max rounded-xl shadow-slate-300">
+            <h1 class="text-4xl font-medium text-center">Clientes</h1>
+            <p class="text-center text-slate-500">CampusAirlines👋</p>
+            <form id="form"class="grid grid-cols-1 gap-5 my-10 ">
+                <div class="grid grid-cols-2 gap-5 w-max">
+                    <div class="">
+                        <label for="nombre">
+                            <p class="pb-2 font-medium text-slate-700">Nombre</p>
+                            <input id="nombre" name="nombre"  type="text" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ingrese nombre completo">
+                        </label>
+                    </div>    
+                    <div>
+                        <label for="apellido">
+                            <p class="pb-2 font-medium text-slate-700">Apellido</p>
+                            <input id="apellido" name="apellido" type="text" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ingrese apellido">
+                        </label>
+                    </div> 
+                    <div>
+                        <label for="documento">
+                            <p class="pb-2 font-medium text-slate-700">Documento</p>
+                            <input id="documento" name="documento"  type="number" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Número de documento">
+                        </label>
+                    </div> 
+                    <div>
+                        <label for="telefono">
+                            <p class="pb-2 font-medium text-slate-700">Telefono</p>
+                            <input id="telefono" name="telefono" type="tel"  class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Número de contacto">
+                        </label>
+                    </div> 
+                    <div>
+                        <label for="fechaNacimiento">
+                            <p class="pb-2 font-medium text-slate-700">Fecha de nacimiento</p>
+                            <input id="fechaNacimiento" name="fechaNacimiento" type="date" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Fecha de nacimiento">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="ciudad">
+                            <p class="pb-2 font-medium text-slate-700">Ciudad</p>
+                            <input id="ciudad" name="ciudad" type="text" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ciudad de origen">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="pais">
+                            <p class="pb-2 font-medium text-slate-700">Pais</p>
+                            <input id="pais" name="pais" type="text"  class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Pais de origen">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email">
+                            <p class="pb-2 font-medium text-slate-700">Email</p>
+                            <input id="email" name="email" type="email" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Correo Electrónico">
+                        </label>
+                    </div> 
+                </div>            
+                
+                <div class="grid grid-cols-4 my-5">
+                    <button class="inline-flex items-center justify-center w-auto p-3 mx-2 my-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" id="register" type="submit" data-accion="POST">
+                        <span>Register</span>
+                    </button>
+                    <button class="inline-flex items-center justify-center w-auto p-3 mx-2 my-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow"  type="submit" data-accion="PUT">
+                        <span>Actualizar</span>
+                    </button> 
+                    <button class="inline-flex items-center justify-center w-auto p-3 mx-2 my-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" type="submit" data-accion="GET">
+                        <span>Listar</span>
+                    </button> 
+                    <button class="inline-flex items-center justify-center w-auto p-3 mx-2 my-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" type="submit" data-accion="DELETE">
+                        <span>Eliminar</span>
+                    </button> 
+                    
+                </div>         
+            </form>
+        </div>
+        <div id="listado" class="grid items-center p-4 my-10 bg-white shadow justify- align-center w-max rounded-xl shadow-slate-300 justify-items-center">
+        
+            <div class="grid items-center col-span-2 align-middle">
+                <form id="form2">
+                    <input type="search" required name="buscar" id="" placeholder="Buscar" class="w-auto px-3 py-3 border-2 rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" >
+                    <button class="inline-flex items-center justify-center w-auto p-3 mx-2 my-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" type="submit" data-accion="SEARCH">
+                        <span>Buscar</span>
+                    </button>     
+                </form>
             </div>
-            <div>
-                <label for="ciudad">
-                    <p class="pb-2 font-medium text-slate-700">Ciudad</p>
-                    <input id="ciudad" name="ciudad" type="text" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ciudad de origen">
-                </label>
-            </div>
-            <div>
-                <label for="pais">
-                    <p class="pb-2 font-medium text-slate-700">Pais</p>
-                    <input id="pais" name="pais" type="text"  class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Pais de origen">
-                </label>
-            </div>
-            <div>
-                <label for="email">
-                    <p class="pb-2 font-medium text-slate-700">Email</p>
-                    <input id="email" name="email" type="email" class="w-auto px-3 py-3 border rounded-lg border-slate-200 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Correo Electrónico">
-                </label>
-            </div> 
-            <div></div>
-            <div></div>
-            <div class="grid grid-cols-3 my-5">
-                <button class="inline-flex items-center justify-center w-auto p-3 my-2 mx-2  font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" id="register" type="submit" data-accion="POST">
-                    <span>Register</span>
-                </button>
-                <button class="inline-flex items-center justify-center w-auto p-3 my-2 mx-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow"  type="submit" data-accion="PUT">
-                    <span>Actualizar</span>
-                </button> 
-                <button class="inline-flex items-center justify-center w-auto p-3 my-2 mx-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" type="submit" data-accion="GET">
-                    <span>Listar</span>
-                </button> 
-                <button class="inline-flex items-center justify-center w-auto p-3 my-2 mx-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" type="submit" data-accion="DELETE">
-                    <span>Eliminar</span>
-                </button> 
-                <button class="inline-flex items-center justify-center w-auto p-3 my-2 mx-2 font-medium text-white bg-indigo-600 border-indigo-500 rounded-lg hover:bg-indigo-500 hover:shadow" type="submit" data-accion="SEARCH">
-                    <span>Buscar</span>
-                </button> 
-            </div>         
-        </form>
+            <table id class="border-2 border-separate table-fixed border-slate-400 border-spacing-1">
+                <thead class="">
+                    <tr class="">
+                        <th class="p-5 border border-slate-300">Documento</th>
+                        <th class="p-5 border border-slate-300">Nombre</th>
+                        <th class="p-5 border border-slate-300">Apellido</th>
+                        <th class="p-5 border border-slate-300">Telefono</th>
+                        <th class="p-5 border border-slate-300">Fecha de Nacimiento</th>
+                        <th class="p-5 border border-slate-300">Ciudad</th>
+                        <th class="p-5 border border-slate-300">Pais</th>
+                        <th class="p-5 border border-slate-300">Email</th>
+                    </tr>
+                </thead>
+                <tbody id="tableUsuarios">
+                    <tr >
+                        <td class="text-center border border-slate-300">Documento</td>
+                        <td class="text-center border border-slate-300 ">Nombre</td>
+                        <td class="text-center border border-slate-300 ">Apellido</td>
+                        <td class="text-center border border-slate-300 ">Telefono</td>
+                        <td class="text-center border border-slate-300 ">Fecha de nacimiento</td>
+                        <td class="text-center border border-slate-300 ">Ciudad</td>
+                        <td class="text-center border border-slate-300 ">Pais</td>
+                        <td class="text-center border border-slate-300 ">Email</td>
+                    </tr>               
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div id="listado" class="w-3/6 p-8 mr-10 mx-2 my-10 bg-white shadow rounded-xl shadow-slate-300">
-        LISTADO
-    </div>
+    
+    
 </body>
 </html>
